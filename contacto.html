@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Responsive website - Contacto</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/c0b0245c8e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<img src="images/logo.png">
+		<div class="topnav" id="myTopnav">
+			<a href="index.html">Home</a>
+			<a href="producto.html">Productos</a>
+			<a href="servicios.html">Servicios</a>
+			<a href="nosotros.html">Nosotros</a>
+			<a href="contacto.html">Contacto</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		    	<i class="fa fa-bars"></i>
+			</a>
+		</div>
+	</header>
+	<main>
+		<section id="fondo-titular">
+			<h1>Contacto</h1>
+		</section>
+		<section>
+			<h2>Ingresa tus datos personales</h2>
+			<form action="action_page.php" method="get">
+				<label  for="nombres-apellidos">Nombres y apellidos</label>
+				<input required placeholder="Ej. Juan Alberto Pérez Gómez" type="text" id="nombres-apellidos">
+				<fieldset>
+					<div>
+						<p style="font-size: 1.03rem; margin-bottom: 5px;">Indica tu ciudad de nacimiento</p>
+					</div>
+					<div>
+						<input type="radio" id="ciudad-01" value="Iquitos" name="ciudades-peru">
+						<label for="ciudad-01">Iquitos</label>
+					</div>
+					<div>
+						<input type="radio" id="ciudad-02" value="Lima" name="ciudades-peru">
+						<label for="ciudad-02">Lima</label>
+					</div>
+					<div>
+						<input type="radio" id="ciudad-03" value="Chiclayo" name="ciudades-peru">
+						<label for="ciudad-03">Chiclayo</label>
+					</div>
+
+
+
+				</fieldset>
+
+				<fieldset>
+					<label for="opciones-autos">Escoge tu marca favorita</label>
+					<select name="" id="opciones-autos">
+						<option value="Audi">Audi</option>
+						<option value="Volvo">Volvo</option>
+						<option value="Porshe">Porshe</option>
+						<option value="Alfa-Romeo">Alfa Romeo</option>
+						<option value="Maserati">Maserati</option>
+					</select>
+				</fieldset>
+				<label for="mensaje">Comentarios</label>
+				<textarea id="mensaje" placeholder="Ingresa un mensaje (máximo 1000 caracteres)"></textarea>
+
+				<input type="submit" value="Enviar">
+			</form>
+
+		</section>
+
+		<section style="padding-top: 0px;">
+			<h2>Ubicación</h2>
+			<div class="container">
+				<iframe style="border-radius: 14px;" class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.5669063380965!2d-76.95062432476797!3d-12.073291642395546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6e435a93c41%3A0xcdaaa71f277efd64!2sISIL!5e0!3m2!1ses-419!2spe!4v1698270010355!5m2!1ses-419!2spe" ></iframe>
+			</div>
+		</section>
+
+	</main>
+	<i class="fa-brands fa-square-whatsapp fa-2xl enlace-icono" style="color: #00833D;"></i>
+	<footer>
+		<p class="p-footer">2023. Todos los derechos reservados.</p>
+	</footer>
+	<!-- JS PARA MENU SUPERIOR -->
+	<script type="text/javascript">
+		function myFunction() {
+  			var x = document.getElementById("myTopnav");
+  			if (x.className === "topnav") {
+    			x.className += " responsive";
+  			} else {
+    		x.className = "topnav";
+  			}
+		}
+	</script>
+</body>
+</html>
